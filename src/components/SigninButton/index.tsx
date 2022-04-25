@@ -3,7 +3,7 @@ import { FiX } from 'react-icons/fi'
 
 import styles from './styles.module.scss';
 
-export function SigninButton() {
+export function SignInButton() {
     const isUserLoggedIn =true;
 
     return isUserLoggedIn ? (
