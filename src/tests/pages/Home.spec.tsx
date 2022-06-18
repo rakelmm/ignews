@@ -1,4 +1,6 @@
 import { render, screen } from '@testing-library/react'
+// import { mocked } from 'ts-jest/utils';
+
 import { stripe } from '../../services/stripe'
 import Home, { getStaticProps } from '../../pages';
 import { mocked } from 'jest-mock';
@@ -6,7 +8,7 @@ import { mocked } from 'jest-mock';
 jest.mock('next/router')
 jest.mock('next-auth/reacts', () => {
     return {
-        useSession: () => [null, false]
+        useSession: () => [null, false],
     }
 })
 jest.mock('../../services/stripe');
