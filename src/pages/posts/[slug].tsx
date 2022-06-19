@@ -11,7 +11,7 @@ interface PostProps {
         slug: string;
         title: string;
         content: string;
-        updatedAt: string;
+        updated_at: string;
     }
 }
 
@@ -25,7 +25,7 @@ export default function post({ post }: PostProps) {
         <main className={styles.container}>
             <article className={styles.post}>
                 <h1>{post.title}</h1>
-                <time>{post.updatedAt}</time>
+                <time>{post.updated_at}</time>
                 <div 
                 className={styles.postContent}
                 dangerouslySetInnerHTML={{ __html: post.content }}
